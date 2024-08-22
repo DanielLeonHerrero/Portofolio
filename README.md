@@ -48,7 +48,7 @@ Para ejecutar este proyecto localmente, sigue los siguientes pasos:
 ## 📜 Licencia
 Este proyecto está licenciado bajo la MIT License.
 
-## 📬 Contacto
+## 📬 Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de:
 
 - Correo: danielleon157@outlook.com
