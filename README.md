@@ -18,13 +18,13 @@ El diseño de este portafolio es minimalista y enfocado en la usabilidad. Utiliz
 
 El proyecto está organizado de la siguiente manera:
 
-/src
-/assets # Imágenes, fuentes y otros recursos estáticos
-/components # Componentes reutilizables de React
-/pages # Páginas de la aplicación
-/styles # Archivos de estilos globales y configuraciones de Tailwind
-/App.jsx # Componente principal de la aplicación
-/main.jsx # Punto de entrada principal del proyecto
+- /src
+- /assets # Imágenes, fuentes y otros recursos estáticos
+- /components # Componentes reutilizables de React
+- /pages # Páginas de la aplicación
+- /styles # Archivos de estilos globales y configuraciones de Tailwind
+- /App.jsx # Componente principal de la aplicación
+- /main.jsx # Punto de entrada principal del proyecto
 
 
 ## 🛠️ Instalación y Configuración
@@ -36,18 +36,19 @@ Para ejecutar este proyecto localmente, sigue los siguientes pasos:
    ```bash
    git clone https://github.com/tu-usuario/portofolio.git
    cd portofolio
-
+    ```
 2. **Instalar Dependencias**
     ```bash
     npm install
+    ```
 3. **Ejecutar el servidor de desarrollo**
     ```bash
     npm run dev
-
-📜 Licencia
+    ```
+## 📜 Licencia
 Este proyecto está licenciado bajo la MIT License.
 
-📬 Contacto
+## 📬 Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de:
 
 Correo: danielleon157@outlook.com
