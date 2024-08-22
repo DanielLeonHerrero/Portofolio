@@ -51,7 +51,7 @@ Este proyecto está licenciado bajo la MIT License.
 ## 📬 Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de:
 
-Correo: danielleon157@outlook.com
-LinkedIn: Daniel Leon Herrero
-¡Gracias por visitar mi portafolio! 😊
+- Correo: danielleon157@outlook.com
+- LinkedIn: Daniel Leon Herrero
+- ¡Gracias por visitar mi portafolio! 😊
 
