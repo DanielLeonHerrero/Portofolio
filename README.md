@@ -38,9 +38,11 @@ Para ejecutar este proyecto localmente, sigue los siguientes pasos:
    cd portofolio
 
 2. **Instalar Dependencias**
-    ```npm install
+    ```bash
+    npm install
 3. **Ejecutar el servidor de desarrollo**
-    ```npm run dev
+    ```bash
+    npm run dev
 
 📜 Licencia
 Este proyecto está licenciado bajo la MIT License.
