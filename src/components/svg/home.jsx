@@ -1,5 +1,5 @@
 import * as React from "react";
-const Home = (props) => (
+const HomeIcon = (props) => (
     <svg
         fill="currentColor"
         viewBox="-4.5 0 32 32"
@@ -18,4 +18,4 @@ const Home = (props) => (
         </g>
     </svg>
 );
-export default Home;
+export default HomeIcon;

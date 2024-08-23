@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Download = (props) => (
+const DownloadIcon = (props) => (
   <svg
     viewBox="0 0 24 24"
     fill="currentColor"
@@ -22,4 +22,4 @@ const Download = (props) => (
     </g>
   </svg>
 );
-export default Download;
+export default DownloadIcon;

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const Clipboard = (props) => (
+const ClipboardIcon = (props) => (
     <svg
         fill="currentColor"
         viewBox="0 0 24 24"
@@ -25,4 +25,4 @@ const Clipboard = (props) => (
         </g>
     </svg>
 );
-export default Clipboard;
+export default ClipboardIcon;

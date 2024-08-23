@@ -1,6 +1,6 @@
 
 
-const Suitcase = (props) => {
+const SuitcaseIcon = (props) => {
     return (
         <svg
             fill="currentColor"
@@ -22,4 +22,4 @@ const Suitcase = (props) => {
     )
 }
 
-export default Suitcase
+export default SuitcaseIcon
