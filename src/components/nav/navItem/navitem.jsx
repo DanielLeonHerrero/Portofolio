@@ -4,14 +4,16 @@ import PropTypes from 'prop-types'
 
 const NavItem = (props) => {
 
-    const { onClick, svg, name } = props
+    const { onClick, svg, name, className } = props
 
     return (
-        <li onClick={onClick} className='flex items-center gap-1'>
-            {svg}
-            <span>
-                {name}
-            </span>
+        <li onClick={onClick} className={`${className}`}>
+            <div className='flex gap-1 items-center'>
+                {svg}
+                <span className=''>
+                    {name}
+                </span>
+            </div>
         </li>
     )
 }
@@ -19,7 +21,8 @@ const NavItem = (props) => {
 NavItem.propTypes = {
     onClick: PropTypes.func.isRequired,
     name: PropTypes.string.isRequired,
-    svg: PropTypes.element.isRequired
+    svg: PropTypes.element.isRequired,
+    className: PropTypes.string
 }
 
 export default NavItem

@@ -2,17 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const variants = {
-    "header": "border p-3 rounded-full",
-    "square": "border p-3",
-    "noBorder": "p-3"
+    "header": "border rounded-full",
+    "square": "border",
+    "noBorder": ""
 }
 
 const Button = (props) => {
 
-    const { variant, svg, text } = props
+    const { variant, svg, text, className } = props
 
     return (
-        <button className={`flex gap-1 items-center ${variants[variant]}`}>
+        <button className={`flex gap-1 items-center ${variants[variant]} ${className}`}>
             {svg}
             <span>
                 {text}
@@ -24,7 +24,8 @@ const Button = (props) => {
 Button.propTypes = {
     variant: PropTypes.string.isRequired,
     svg: PropTypes.element,
-    text: PropTypes.string
+    text: PropTypes.string,
+    className: PropTypes.string
 }
 
 export default Button;

@@ -3,22 +3,23 @@ import Header from "./components/header/header";
 import TypingEffect from "./components/typing/typing";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
   const [headerBg, setHeaderBg] = useState("transparent");
   const [textColor, setColorText] = useState("white");
   const sectionRef = useRef(null);
 
   const roles = ["de Aplicaciones", "Web", "de API's"];
 
-
-
-
   useEffect(() => {
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setHeaderBg(entry.isIntersecting ? "white" : "transparent");
-        setColorText(entry.isIntersecting ? "black" : "white");
+        if (!menuOpen) {
+          setHeaderBg(entry.isIntersecting ? "white" : "transparent");
+          setColorText(entry.isIntersecting ? "black" : "white");
+        }
       },
-      { threshold: 0.9 }
+      { threshold: menuOpen ? 0.6 : 0.9 }
     );
 
     if (sectionRef.current) {
@@ -30,12 +31,21 @@ function App() {
         observer.unobserve(sectionRef.current);
       }
     };
-  }, []);
+  }, [menuOpen]);
+
+  useEffect(() => {
+    setColorText("white");
+    setHeaderBg("transparent");
+    if (menuOpen) {
+      setHeaderBg("white");
+      setColorText("black");
+    }
+  }, [menuOpen]);
 
 
   return (
     <>
-      <Header className={`fixed top-0 left-0 right-0 z-50 text-${textColor} bg-${headerBg}`} />
+      <Header className={`fixed top-0 left-0 right-0 z-50 text-${textColor} bg-${headerBg}`} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="relative h-screen bg-center bg-cover text-white" style={{ backgroundImage: "url('/images/background.jpg')", backgroundAttachment: "fixed" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex items-center justify-center">

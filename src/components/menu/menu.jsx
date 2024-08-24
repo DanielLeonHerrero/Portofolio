@@ -7,9 +7,11 @@ const Menu = (props) => {
     const { onClick } = props
 
     return (
+        <>
         <button className="h-auto w-10" onClick={onClick}>
             <MenuIcon className="w-8 h-8"/>
         </button>
+        </>
     )
 }
 
