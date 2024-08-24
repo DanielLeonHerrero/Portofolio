@@ -14,14 +14,14 @@ const TypingEffect = (props) => {
             setText((prev) => textList[index].substring(0, prev.length + (isDeleting ? -1 : 1)));
 
             if (!isDeleting && text === textList[index]) {
-                setTimeout(() => setIsDeleting(true), 500);
+                setTimeout(() => setIsDeleting(true), 1000);
             } else if (isDeleting && text === "") {
                 setIsDeleting(false);
                 setIndex((prevIndex) => prevIndex < textList.length - 1 ? prevIndex + 1 : 0);
             }
 
             clearTimeout(timeout);
-        }, isDeleting ? 100 : 200);
+        }, isDeleting ? 50 : 100);
 
         return () => clearTimeout(timeout);
     }, [text, isDeleting, index]);
