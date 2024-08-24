@@ -2,13 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import Header from "./components/header/header";
 import ThemeProvider from './context/themeContext/themeProvider.jsx';
 import WelcomeSection from "./components/sections/welcome/welcomeSection";
-import WorkSection from "./components/sections/works/workSection";
+import WorkSection from "./components/sections/work/workSection";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [headerBg, setHeaderBg] = useState("transparent");
   const [textColor, setColorText] = useState("white");
   const sectionRef = useRef(null);
+
+
 
   useEffect(() => {
 
@@ -47,7 +49,7 @@ function App() {
     <>
       <ThemeProvider>
         <Header className={`fixed top-0 left-0 right-0 z-50 text-${textColor} bg-${headerBg}`} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <WelcomeSection/>
+        <WelcomeSection />
         <WorkSection sectionRef={sectionRef} />
       </ThemeProvider>
     </>
