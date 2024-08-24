@@ -6,12 +6,24 @@ import NavItem from "./navItem/navitem"
 import ESIcon from "../svg/country/es"
 import MoonIcon from "../svg/moon"
 import ContactBook from "../svg/contactBook"
+import useTheme from "../../context/themeContext/hook/useTheme"
+import SunIcon from "../svg/sun"
 
-const handlerMoveToSection = () => {
-
-}
 
 const Nav = () => {
+    const { toggleTheme, theme } = useTheme()
+    
+    const handlerMoveToSection = () => {
+    
+    }
+    
+    const handlerChangeLanguage = () => {}
+    
+    const handlerChangeTheme = () => {
+        toggleTheme()
+    }
+
+
     return (
         <nav className="w-full">
             <ul className="flex flex-col items-center gap-3 lg:flex-row lg:gap-10">
@@ -49,8 +61,9 @@ const Nav = () => {
                 />
                 <Button
                     variant="noBorder"
-                    svg={<MoonIcon className="w-6 h-6" />}
+                    svg={theme === "light" ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
                     className={"h-8 w-full flex justify-center"}
+                    onClick={() => handlerChangeTheme()}
                 />
             </ul>
         </nav>

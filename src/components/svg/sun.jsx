@@ -4,7 +4,7 @@ const SunIcon = (props) => (
   <svg
     viewBox="0 0 48 48"
     xmlns="http://www.w3.org/2000/svg"
-    fill="#000000"
+    fill="currentColor"
     {...props}
   >
     <g id="SVGRepo_bgCarrier" strokeWidth={0} />
