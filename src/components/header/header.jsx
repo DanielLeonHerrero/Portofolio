@@ -23,7 +23,7 @@ const Header = (props) => {
                     setColorText(entry.isIntersecting ? theme === "light" ? "black" : "white" : "white");
                 }
             },
-            { threshold: menuOpen ? 0.6 : 0.9 }
+            { threshold: 0.2 }
         );
 
         if (sectionRef.current) {
@@ -52,7 +52,7 @@ const Header = (props) => {
 
     return (
         <>
-            <div className={`w-full pt-3 text-${textColor} bg-${headerBg} ${className}`}>
+            <div className={`w-full pt-3 text-${textColor} bg-${headerBg} ${className} transition-colors duration-700`}>
                 <div className="p-3">
                     <div className="w-full flex justify-center">
                         <div className=" w-full flex justify-between align-center items-center max-w-7xl">
