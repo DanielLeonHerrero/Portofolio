@@ -13,23 +13,7 @@ import useSection from "../../context/sectionContext/hook/useSection"
 
 const Nav = () => {
     const { toggleTheme, theme } = useTheme()
-    const { workSection, welcomeSection, projectSection, contactSection } = useSection()
-
-    const handlerMoveToWorkerSection = () => {
-        workSection.current.scrollIntoView({ behavior: "smooth" })
-    }
-
-    const handlerMoveToWelcomeSection = () => {
-        welcomeSection.current.scrollIntoView({ behavior: "smooth" })
-    }
-
-    const handlerMoveToProjectSection = () => {
-        projectSection.current.scrollIntoView({ behavior: "smooth" })
-    }
-
-    const handlerMoveToContactSection = () => {
-        contactSection.current.scrollIntoView({ behavior: "smooth" })
-    }
+    const { workSection, welcomeSection, projectSection, contactSection, handleScroll } = useSection()
 
     const handlerChangeLanguage = () => { }
 
@@ -45,25 +29,25 @@ const Nav = () => {
                 <NavItem
                     name="inicio"
                     svg={<HomeIcon className="w-6 h-6" />}
-                    onClick={() => handlerMoveToWelcomeSection()}
+                    onClick={() => handleScroll(welcomeSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Trabajos"
                     svg={<SuitcaseIcon className="w-6 h-6" />}
-                    onClick={() => handlerMoveToWorkerSection()}
+                    onClick={() => handleScroll(workSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Proyectos"
                     svg={<ClipboardIcon className="w-6 h-6" />}
-                    onClick={() => handlerMoveToProjectSection()}
+                    onClick={() => handleScroll(projectSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Contacto"
                     svg={<ContactBook className="w-6 h-6" />}
-                    onClick={() => handlerMoveToContactSection()}
+                    onClick={() => handleScroll(contactSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
 

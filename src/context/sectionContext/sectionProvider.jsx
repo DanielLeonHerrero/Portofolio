@@ -7,8 +7,12 @@ const SectionProvider = ({ children }) => {
     const projectSection = useRef(null);
     const contactSection = useRef(null);
 
+    const handleScroll = (section) => {
+        section.current.scrollIntoView({ behavior: "smooth" });
+    }
+
     return (
-        <SectionContext.Provider value={{ workSection, welcomeSection, projectSection, contactSection }}>
+        <SectionContext.Provider value={{ workSection, welcomeSection, projectSection, contactSection, handleScroll }}>
             {children}
         </SectionContext.Provider>
     );
