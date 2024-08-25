@@ -5,34 +5,36 @@ import PropTypes from 'prop-types'
 import { useEffect } from "react"
 import { useState } from "react"
 import useTheme from "../../context/themeContext/hook/useTheme"
+import useSection from "../../context/sectionContext/hook/useSection"
 
 
 const Header = (props) => {
 
-    const { className, menuOpen, setMenuOpen, sectionRef } = props
+    const { className, menuOpen, setMenuOpen } = props
     const [headerBg, setHeaderBg] = useState("transparent");
     const [textColor, setColorText] = useState("white");
     const { theme } = useTheme()
+    const { welcomeSection } = useSection()
 
     useEffect(() => {
 
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (!menuOpen) {
-                    setHeaderBg(entry.isIntersecting ? theme === "light" ? "white" : "black" : "transparent");
-                    setColorText(entry.isIntersecting ? theme === "light" ? "black" : "white" : "white");
+                    setHeaderBg(entry.isIntersecting ? "transparent" : theme === "light" ? "white" : "black" );
+                    setColorText(entry.isIntersecting ? "white" : theme === "light" ? "black" : "white");
                 }
             },
-            { threshold: 0.06 }
+            { threshold: 0.8 }
         );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
+        if (welcomeSection.current) {
+            observer.observe(welcomeSection.current);
         }
 
         return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
+            if (welcomeSection.current) {
+                observer.unobserve(welcomeSection.current);
             }
         };
     }, [menuOpen,theme]);
@@ -52,7 +54,7 @@ const Header = (props) => {
 
     return (
         <>
-            <div className={`w-full pt-3 text-${textColor} bg-${headerBg} ${className} transition-colors duration-500`}>
+            <div className={`w-full pt-3 text-${textColor} bg-${headerBg} ${className} ${!menuOpen && "transition-colors duration-500"}`}>
                 <div className="p-3">
                     <div className="w-full flex justify-center">
                         <div className=" w-full flex justify-between align-center items-center max-w-7xl">
@@ -80,8 +82,7 @@ const Header = (props) => {
 Header.propTypes = {
     className: PropTypes.string,
     menuOpen: PropTypes.bool.isRequired,
-    setMenuOpen: PropTypes.func.isRequired,
-    sectionRef: PropTypes.object.isRequired
+    setMenuOpen: PropTypes.func.isRequired
 }
 
 export default Header

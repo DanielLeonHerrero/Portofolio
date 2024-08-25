@@ -8,17 +8,31 @@ import MoonIcon from "../svg/moon"
 import ContactBook from "../svg/contactBook"
 import useTheme from "../../context/themeContext/hook/useTheme"
 import SunIcon from "../svg/sun"
+import useSection from "../../context/sectionContext/hook/useSection"
 
 
 const Nav = () => {
     const { toggleTheme, theme } = useTheme()
-    
-    const handlerMoveToSection = () => {
-    
+    const { workSection, welcomeSection, projectSection, contactSection } = useSection()
+
+    const handlerMoveToWorkerSection = () => {
+        workSection.current.scrollIntoView({ behavior: "smooth" })
     }
-    
-    const handlerChangeLanguage = () => {}
-    
+
+    const handlerMoveToWelcomeSection = () => {
+        welcomeSection.current.scrollIntoView({ behavior: "smooth" })
+    }
+
+    const handlerMoveToProjectSection = () => {
+        projectSection.current.scrollIntoView({ behavior: "smooth" })
+    }
+
+    const handlerMoveToContactSection = () => {
+        contactSection.current.scrollIntoView({ behavior: "smooth" })
+    }
+
+    const handlerChangeLanguage = () => { }
+
     const handlerChangeTheme = () => {
         toggleTheme()
     }
@@ -31,25 +45,25 @@ const Nav = () => {
                 <NavItem
                     name="inicio"
                     svg={<HomeIcon className="w-6 h-6" />}
-                    onClick={() => handlerMoveToSection()}
+                    onClick={() => handlerMoveToWelcomeSection()}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Trabajos"
                     svg={<SuitcaseIcon className="w-6 h-6" />}
-                    onClick={() => handlerMoveToSection()}
+                    onClick={() => handlerMoveToWorkerSection()}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Proyectos"
                     svg={<ClipboardIcon className="w-6 h-6" />}
-                    onClick={() => handlerMoveToSection()}
-                    className={"h-8 w-full flex justify-center" }
+                    onClick={() => handlerMoveToProjectSection()}
+                    className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Contacto"
                     svg={<ContactBook className="w-6 h-6" />}
-                    onClick={() => handlerMoveToSection()}
+                    onClick={() => handlerMoveToContactSection()}
                     className={"h-8 w-full flex justify-center"}
                 />
 
