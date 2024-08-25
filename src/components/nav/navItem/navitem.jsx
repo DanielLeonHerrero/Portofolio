@@ -7,7 +7,7 @@ const NavItem = (props) => {
     const { onClick, svg, name, className } = props
 
     return (
-        <li onClick={onClick} className={`${className}`}>
+        <li onClick={onClick} className={`${className} cursor-pointer`}>
             <div className='flex gap-1 items-center'>
                 {svg}
                 <span className=''>

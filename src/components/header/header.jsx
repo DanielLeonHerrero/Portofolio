@@ -14,7 +14,7 @@ const Header = (props) => {
     const [headerBg, setHeaderBg] = useState("transparent");
     const [textColor, setColorText] = useState("white");
     const { theme } = useTheme()
-    const { welcomeSection } = useSection()
+    const { welcomeSection, handleScroll } = useSection()
 
     useEffect(() => {
 
@@ -59,7 +59,7 @@ const Header = (props) => {
                     <div className="w-full flex justify-center">
                         <div className=" w-full flex justify-between align-center items-center max-w-7xl">
                             <div>
-                                <h1 className="font-bold text-xl">Daniel Leon Herrero</h1>
+                                <h1 className="font-bold text-xl" onClick={() => {handleScroll(welcomeSection)}}>Daniel Leon Herrero</h1>
                             </div>
                             <div className="lg:hidden">
                                 <Menu onClick={() => handlerMenu()} />
