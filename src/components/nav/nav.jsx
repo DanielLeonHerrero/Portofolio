@@ -9,9 +9,11 @@ import ContactBook from "../svg/contactBook"
 import useTheme from "../../context/themeContext/hook/useTheme"
 import SunIcon from "../svg/sun"
 import useSection from "../../context/sectionContext/hook/useSection"
+import PropTypes from 'prop-types'
 
 
-const Nav = () => {
+const Nav = (props) => {
+    const { setMenuOpen } = props
     const { toggleTheme, theme } = useTheme()
     const { workSection, welcomeSection, projectSection, contactSection, handleScroll } = useSection()
 
@@ -19,6 +21,13 @@ const Nav = () => {
 
     const handlerChangeTheme = () => {
         toggleTheme()
+    }
+
+    const handlerClick = (section) => {
+        handleScroll(section)
+        if (setMenuOpen) {
+            setMenuOpen(false)
+        }
     }
 
 
@@ -29,25 +38,25 @@ const Nav = () => {
                 <NavItem
                     name="inicio"
                     svg={<HomeIcon className="w-6 h-6" />}
-                    onClick={() => handleScroll(welcomeSection)}
+                    onClick={() => handlerClick(welcomeSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Trabajos"
                     svg={<SuitcaseIcon className="w-6 h-6" />}
-                    onClick={() => handleScroll(workSection)}
+                    onClick={() => handlerClick(workSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Proyectos"
                     svg={<ClipboardIcon className="w-6 h-6" />}
-                    onClick={() => handleScroll(projectSection)}
+                    onClick={() => handlerClick(projectSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
                     name="Contacto"
                     svg={<ContactBook className="w-6 h-6" />}
-                    onClick={() => handleScroll(contactSection)}
+                    onClick={() => handlerClick(contactSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
 
@@ -66,6 +75,10 @@ const Nav = () => {
             </ul>
         </nav>
     );
+};
+
+Nav.propTypes = {
+    setMenuOpen: PropTypes.func,
 };
 
 export default Nav

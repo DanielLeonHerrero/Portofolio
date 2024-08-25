@@ -72,7 +72,7 @@ const Header = (props) => {
                 </div>
 
                 {menuOpen && <Dropdown className="flex flex-col items-center text-black bg-white text-center lg:hidden dark:bg-black dark:text-white">
-                    <Nav />
+                    <Nav setMenuOpen={setMenuOpen} />
                 </Dropdown>}
             </div>
         </>
