@@ -1,15 +1,14 @@
-
 import React from 'react'
 import TypingEffect from '../../typing/typing.jsx'
 import useSection from '../../../context/sectionContext/hook/useSection.js';
+
 const WelcomeSection = () => {
 
   const { welcomeSection } = useSection();
   const roles = ["de Aplicaciones", "Web", "de API's"];
 
-
   return (
-    <div ref={welcomeSection} className="relative h-screen bg-center bg-cover text-white" style={{ backgroundImage: "url('/images/background.jpg')", backgroundAttachment: "fixed" }}>
+    <div ref={welcomeSection} className="relative h-screen bg-center bg-cover text-white" style={{ backgroundImage: "url('/images/background.jpg')" }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 flex items-center justify-center">
         <section className="flex flex-col gap-5 items-center justify-center text-white m-10 text-center">
