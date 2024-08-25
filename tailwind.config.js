@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        'fullHD': '1920px',
+      },
       keyframes: {
         blink: {
           '0%, 100%': { opacity: '1' },
