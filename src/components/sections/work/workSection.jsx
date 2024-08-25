@@ -1,12 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const WorkSection = (props) => {
-
-    const { sectionRef } = props
+const WorkSection = () => {
 
     return (
-        <div ref={sectionRef} className="relative h-screen text-black dark:bg-black">
+        <div className="relative h-screen text-black dark:bg-black">
           <section className="flex flex-col gap-5 items-center justify-center text-black text-center">
             <p className="text-lg sm:text-3xl text-dark dark:text-white">Nueva Sección</p>
             <p className="font-bold text-3xl sm:text-6xl lg:text-7xl">Contenido de la nueva sección</p>
@@ -16,7 +14,6 @@ const WorkSection = (props) => {
 }
 
 WorkSection.propTypes = {
-    sectionRef: PropTypes.object.isRequired
 }
 
 export default WorkSection
