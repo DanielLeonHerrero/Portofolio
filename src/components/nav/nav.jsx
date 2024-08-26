@@ -10,14 +10,14 @@ import useTheme from "../../context/themeContext/hook/useTheme"
 import SunIcon from "../svg/sun"
 import useSection from "../../context/sectionContext/hook/useSection"
 import PropTypes from 'prop-types'
+import LanguageSelector from "../languageSelector/languageSelector"
 
 
 const Nav = (props) => {
-    const { setMenuOpen } = props
+    const { setMenuOpen, headerBg, textColor } = props
     const { toggleTheme, theme } = useTheme()
     const { workSection, welcomeSection, projectSection, contactSection, handleScroll } = useSection()
 
-    const handlerChangeLanguage = () => { }
 
     const handlerChangeTheme = () => {
         toggleTheme()
@@ -60,12 +60,8 @@ const Nav = (props) => {
                     className={"h-8 w-full flex justify-center"}
                 />
 
-                <Button
-                    variant="noBorder"
-                    text={"Español"}
-                    svg={<ESIcon className="w-6 h-6" />}
-                    className={"h-8 w-full flex justify-center"}
-                />
+                <LanguageSelector headerBg={headerBg} textColor={textColor}/>
+               
                 <Button
                     variant="noBorder"
                     svg={theme === "light" ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
@@ -79,6 +75,8 @@ const Nav = (props) => {
 
 Nav.propTypes = {
     setMenuOpen: PropTypes.func,
+    headerBg: PropTypes.string,
+    textColor: PropTypes.string
 };
 
 export default Nav

@@ -25,7 +25,7 @@ const Header = (props) => {
                     setColorText(entry.isIntersecting ? "white" : theme === "light" ? "black" : "white");
                 }
             },
-            { threshold: 0.06 }
+            { threshold: 0.7 }
         );
 
         if (welcomeSection.current) {
@@ -65,7 +65,7 @@ const Header = (props) => {
                                 <Menu onClick={() => handlerMenu()} />
                             </div>
                             <div className="hidden lg:flex">
-                                <Nav />
+                                <Nav headerBg={headerBg} textColor={textColor}/>
                             </div>
                         </div>
                     </div>
