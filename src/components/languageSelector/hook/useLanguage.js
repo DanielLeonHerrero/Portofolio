@@ -1,13 +1,19 @@
-import { useState } from "react"
+import { useState, useEffect } from "react";
 import LanguageList from "../../../utils/languageList/languageList";
+import { useTranslation } from "react-i18next";
 
 const useLanguage = () => {
-    const [language, setLanguage] = useState(LanguageList.es)
+    const { i18n } = useTranslation();
+  const [language, setLanguage] = useState(LanguageList[i18n.language]);
 
-    return {
-        language,
-        setLanguage
-    }
-}
+  useEffect(() => {
+    i18n.changeLanguage(language.key);
+  }, [language]);
+
+  return {
+    language,
+    setLanguage
+  };
+};
 
 export default useLanguage;

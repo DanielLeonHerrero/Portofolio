@@ -3,13 +3,14 @@ import Button from "../button/buton";
 import LanguageMenu from "./languageMenu/languageMenu";
 import PropTypes from 'prop-types'
 import { useState } from "react";
-import useLanguage from "./hook/useLanguage";
+import { useTranslation } from "react-i18next";
+import LanguageList from "../../utils/languageList/languageList";
 
 const LanguageSelector = (props) => {
 
     const { headerBg, textColor } = props
-
-    const { language } = useLanguage()
+    const { i18n } = useTranslation()
+    const language = LanguageList[i18n.language]
     const [showMenuLanguage, setShowMenuLanguage] = useState(false)
 
     console.log(language);

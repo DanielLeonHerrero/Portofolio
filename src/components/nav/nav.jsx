@@ -3,7 +3,6 @@ import HomeIcon from "../svg/home"
 import SuitcaseIcon from "../svg/suitcase"
 import ClipboardIcon from "../svg/clipboard"
 import NavItem from "./navItem/navitem"
-import ESIcon from "../svg/country/es"
 import MoonIcon from "../svg/moon"
 import ContactBook from "../svg/contactBook"
 import useTheme from "../../context/themeContext/hook/useTheme"
@@ -11,12 +10,13 @@ import SunIcon from "../svg/sun"
 import useSection from "../../context/sectionContext/hook/useSection"
 import PropTypes from 'prop-types'
 import LanguageSelector from "../languageSelector/languageSelector"
-
+import { useTranslation } from "react-i18next"
 
 const Nav = (props) => {
     const { setMenuOpen, headerBg, textColor } = props
     const { toggleTheme, theme } = useTheme()
     const { workSection, welcomeSection, projectSection, contactSection, handleScroll } = useSection()
+    const { t } = useTranslation()
 
 
     const handlerChangeTheme = () => {
@@ -36,25 +36,25 @@ const Nav = (props) => {
             <ul className="flex flex-col items-center gap-3 lg:flex-row lg:gap-10">
 
                 <NavItem
-                    name="inicio"
+                    name={t("nav.home")}
                     svg={<HomeIcon className="w-6 h-6" />}
                     onClick={() => handlerClick(welcomeSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
-                    name="Trabajos"
+                    name={t("nav.work")}
                     svg={<SuitcaseIcon className="w-6 h-6" />}
                     onClick={() => handlerClick(workSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
-                    name="Proyectos"
+                    name={t("nav.projects")}
                     svg={<ClipboardIcon className="w-6 h-6" />}
                     onClick={() => handlerClick(projectSection)}
                     className={"h-8 w-full flex justify-center"}
                 />
                 <NavItem
-                    name="Contacto"
+                    name={t("nav.contact")}
                     svg={<ContactBook className="w-6 h-6" />}
                     onClick={() => handlerClick(contactSection)}
                     className={"h-8 w-full flex justify-center"}

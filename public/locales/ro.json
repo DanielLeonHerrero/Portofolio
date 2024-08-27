@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "Acasă",
+        "work": "Lucrări",
+        "projects": "Proiecte",
+        "contact": "Contact"
+    },
+    "welcomeSection": {
+        "hello": "Salut",
+        "presentation": "Sunt Daniel Leon Herrero",
+        "developer": "Un Dezvoltator",
+        "role": {
+            "app": "de Aplicații",
+            "web": "Web",
+            "API": "de API-uri"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "nav": {
+        "home": "Home",
+        "work": "Work",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "welcomeSection": {
+        "hello": "Hello",
+        "presentation": "I'm Daniel Leon Herrero",
+        "developer": "A Developer",
+        "role": {
+            "app": "of Applications",
+            "web": "Web",
+            "API": "of APIs"
+        }
+    }
+}
