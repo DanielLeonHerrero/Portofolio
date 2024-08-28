@@ -14,5 +14,16 @@
             "web": "Web",
             "API": "de APIs"
         }
+    },
+    "aboutmeSection": {
+        "title": "Sobre mi",
+        "description": "Una breve descripción de mi persona en mi etapa profesional.",
+        "name": "Nombre",
+        "profile": "Perfil",
+        "email": "Correo",
+        "phone": "Teléfono",
+        "habilities": "Habilidades",
+        "databases": "Bases de datos",
+        "others": "Otros"
     }
 }

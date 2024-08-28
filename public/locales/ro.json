@@ -14,5 +14,16 @@
             "web": "Web",
             "API": "de API-uri"
         }
+    },
+    "aboutmeSection": {
+        "title": "Despre mine",
+        "description": "O scurtă descriere a mea în stadiul meu profesional.",
+        "name": "Nume",
+        "profile": "Profil",
+        "email": "Email",
+        "phone": "Telefon",
+        "habilities": "Aptitudini",
+        "databases": "Baze de date",
+        "others": "Altele"
     }
 }
