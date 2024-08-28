@@ -6,14 +6,17 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import LanguageList from "../../utils/languageList/languageList";
 
+const normalizeLanguageCode = (code) => {
+  if (!code) return null;
+  return code.split('-')[0];
+}
 const LanguageSelector = (props) => {
 
     const { headerBg, textColor } = props
     const { i18n } = useTranslation()
-    const language = LanguageList[i18n.language]
+    const normalizedLanguageCode = normalizeLanguageCode(i18n.language);
+    const language = LanguageList[normalizedLanguageCode];
     const [showMenuLanguage, setShowMenuLanguage] = useState(false)
-
-    console.log(language);
 
     return (
 <div className="flex flex-col items-center">
