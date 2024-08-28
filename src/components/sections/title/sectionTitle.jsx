@@ -7,13 +7,13 @@ const SectionTitle = (props) => {
 
     return (
         <>
-            <div className='flex gap-1 items-center'>
+            <div className='flex gap-1 items-center dark:text-white'>
                 <div className='w-10'>
                     {svg()}
                 </div>
                 <h1 className='text-5xl font-bold'>{title.toUpperCase()}</h1>
             </div>
-            <p>{subtitle}</p>
+            <p className='dark:text-white'>{subtitle}</p>
             <div className='bg-black h-1 w-10' />
         </>
     )

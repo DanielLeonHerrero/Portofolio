@@ -6,7 +6,7 @@ const Person = (props) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 512 512"
     xmlSpace="preserve"
-    fill="#000000"
+    fill="currentColor"
     {...props}
   >
     <g id="SVGRepo_bgCarrier" strokeWidth={0} />
@@ -16,7 +16,7 @@ const Person = (props) => (
       strokeLinejoin="round"
     />
     <g id="SVGRepo_iconCarrier">
-      <style type="text/css">{" .st0{fill:#000000;} "}</style>
+      <style type="text/css">{" .st0{fill:currentColor;} "}</style>
       <g>
         <path
           className="st0"

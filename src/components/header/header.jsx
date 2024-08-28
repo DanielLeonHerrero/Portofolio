@@ -54,8 +54,8 @@ const Header = (props) => {
 
     return (
         <>
-            <div className={`fixed top-0 left-0 right-0 z-50 w-full pt-3 text-${textColor} bg-${headerBg} ${className} ${!menuOpen && "transition-colors duration-500"}`}>
-                <div className="p-3">
+            <div className={`fixed top-0 left-0 right-0 z-50 w-full text-${textColor} bg-${headerBg} ${className} ${!menuOpen && "transition-colors duration-500"}`}>
+                <div className="p-5">
                     <div className="w-full flex justify-center">
                         <div className=" w-full flex justify-between align-center items-center max-w-7xl">
                             <div>
