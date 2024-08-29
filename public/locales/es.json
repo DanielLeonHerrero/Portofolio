@@ -25,5 +25,9 @@
         "habilities": "Habilidades",
         "databases": "Bases de datos",
         "others": "Otros"
+    },
+    "workSection": {
+        "title": "Trabajos",
+        "description": "Algunos de los trabajos que he realizado en mi etapa profesional."
     }
 }
