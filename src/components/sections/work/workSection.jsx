@@ -46,7 +46,7 @@ const WorkSection = () => {
         </Card>
 
         <SectionTitle svg={() => <SuitcaseIcon />} title={t("workSection.title")} subtitle={t("workSection.description")} />
-        <div className='mt-5'>
+        <div className='mt-5 w-full'>
           <WorkTimeLine />
         </div>
       </section>

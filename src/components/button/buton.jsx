@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 const variants = {
     "header": "border rounded-full",
     "square": "border",
-    "noBorder": ""
+    "noBorder": "",
+    "primary": "bg-black text-white w-48 h-16 rounded-full flex justify-center hover:bg-gray-600 hover:border-solid hover:border-4 hover:border-black dark:bg-white dark:text-black dark:hover:bg-gray-300 dark:hover:border-white",
 }
 
 const Button = (props) => {
