@@ -1,11 +1,13 @@
 import { useState } from "react";
-import WorkList from "../../../../utils/workList/workList";
 import Button from "../../../button/buton";
 import WorkTimeLineElement from "../workTimeLineElement/workTImeLineElement"
+import { useTranslation } from "react-i18next";
 
 const WorkTimeLine = () => {
     const [expanded, setExpanded] = useState(false)
-    const reversedWorkList = WorkList.slice().reverse()
+    const { t } = useTranslation()
+    const workList = t('workSection.list', { returnObjects: true });
+    const reversedWorkList = workList.slice().reverse()
 
     return (
         <div className="flex flex-col items-center">
