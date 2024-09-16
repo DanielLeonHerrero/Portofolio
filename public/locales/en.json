@@ -7,7 +7,7 @@
     },
     "welcomeSection": {
         "hello": "Hello",
-        "presentation": "I'm Daniel Leon Herrero",
+        "presentation": "I am Daniel Leon Herrero",
         "developer": "A Developer",
         "role": {
             "app": "of Applications",
@@ -25,5 +25,51 @@
         "habilities": "Skills",
         "databases": "Databases",
         "others": "Others"
+    },
+    "workSection": {
+        "title": "Work",
+        "description": "Some of the jobs I have done in my professional career.",
+        "list": [
+            {
+                "id": 1,
+                "company": "SIMRALLY",
+                "position": "Server Administrator",
+                "date": "May 2020",
+                "description": "Server administration, operating system installation, and backup management. Technical support and security policies.",
+                "location": "Barcelona, Spain"
+            },
+            {
+                "id": 2,
+                "company": "4GL Consultors",
+                "position": "Intern",
+                "date": "February 2021",
+                "description": "Web application development and programming in PHP, HTML, CSS, and JavaScript. Code debugging support.",
+                "location": "Barcelona, Spain"
+            },
+            {
+                "id": 3,
+                "company": "RMTrade",
+                "position": "Technical Support Specialist",
+                "date": "November 2021",
+                "description": "Technical support, equipment maintenance, and resolution of hardware, software, and network issues.",
+                "location": "Barcelona, Spain"
+            },
+            {
+                "id": 4,
+                "company": "Egara Optiminn",
+                "position": "Systems Specialist",
+                "date": "May 2022",
+                "description": "Security risk management, audits, and administration of tools like Azure Sentinel.",
+                "location": "Barcelona, Spain"
+            },
+            {
+                "id": 5,
+                "company": "4GL Consultors",
+                "position": "Web Developer",
+                "date": "November 2023",
+                "description": "Web application development with PHP, HTML, CSS, JavaScript, React, and Node.js. Backend solutions and RESTful API creation.",
+                "location": "Barcelona, Spain"
+            }
+        ]
     }
 }

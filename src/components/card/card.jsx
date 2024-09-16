@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 const variants = {
     "flat": "w-full bg-white",
+    "project": "w-full border shadow-md dark:shadow-gray-700 dark:text-white",
 }
 
 const Card = (props) => {

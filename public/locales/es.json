@@ -71,5 +71,44 @@
                 "location": "Barcelona, España"
             }
         ]
-    }
+    },
+"projectsSection" : {
+    "title": "Proyectos",
+    "description": "Algunos de los proyectos que he realizado en mi etapa profesional.",
+    "list": [
+        {
+            "id": 1,
+            "name": "Web de Presentación",
+            "description": "Web de presentación personal con información sobre mi perfil profesional y habilidades.",
+            "technologies": "HTML, CSS, JavaScript, React, i18next",
+            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
+            "date": "Noviembre 2023",
+            "link": ""
+        },
+        {
+            "id": 2,
+            "name": "API RESTful",
+            "description": "API RESTful para la gestión de usuarios y roles en una aplicación web.",
+            "technologies": "Node.js, Express, MongoDB, JWT",
+            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
+            "link": ""
+        },
+        {
+            "id": 3,
+            "name": "Aplicación Web",
+            "description": "Aplicación web para la gestión de tareas y proyectos con usuarios y roles.",
+            "technologies": "React, Node.js, Express, MongoDB, JWT",
+            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
+            "link": ""
+        },
+        {
+            "id": 4,
+            "name": "Aplicación Móvil",
+            "description": "Aplicación móvil para la gestión de tareas y proyectos con usuarios y roles.",
+            "technologies": "React Native, Node.js, Express, MongoDB, JWT",
+            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
+            "link": ""
+        }
+    ]
+}
 }

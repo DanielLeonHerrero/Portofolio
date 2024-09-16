@@ -17,7 +17,7 @@
     },
     "aboutmeSection": {
         "title": "Despre mine",
-        "description": "O scurtă descriere a mea în stadiul meu profesional.",
+        "description": "O scurtă descriere a mea în etapa profesională.",
         "name": "Nume",
         "profile": "Profil",
         "email": "Email",
@@ -25,5 +25,51 @@
         "habilities": "Aptitudini",
         "databases": "Baze de date",
         "others": "Altele"
+    },
+    "workSection": {
+        "title": "Lucrări",
+        "description": "Unele dintre lucrările pe care le-am realizat în cariera mea profesională.",
+        "list": [
+            {
+                "id": 1,
+                "company": "SIMRALLY",
+                "position": "Administrator de Servere",
+                "date": "Mai 2020",
+                "description": "Administrarea serverelor, instalarea sistemelor de operare și gestionarea copiilor de rezervă. Suport tehnic și politici de securitate.",
+                "location": "Barcelona, Spania"
+            },
+            {
+                "id": 2,
+                "company": "4GL Consultors",
+                "position": "Intern",
+                "date": "Februarie 2021",
+                "description": "Dezvoltarea aplicațiilor web și programare în PHP, HTML, CSS și JavaScript. Suport în depanarea codului.",
+                "location": "Barcelona, Spania"
+            },
+            {
+                "id": 3,
+                "company": "RMTrade",
+                "position": "Specialist Suport Tehnic",
+                "date": "Noiembrie 2021",
+                "description": "Suport tehnic, întreținerea echipamentelor și rezolvarea problemelor de hardware, software și rețea.",
+                "location": "Barcelona, Spania"
+            },
+            {
+                "id": 4,
+                "company": "Egara Optiminn",
+                "position": "Specialist în Sisteme",
+                "date": "Mai 2022",
+                "description": "Gestionarea riscurilor de securitate, audituri și administrarea instrumentelor precum Azure Sentinel.",
+                "location": "Barcelona, Spania"
+            },
+            {
+                "id": 5,
+                "company": "4GL Consultors",
+                "position": "Dezvoltator Web",
+                "date": "Noiembrie 2023",
+                "description": "Dezvoltarea aplicațiilor web cu PHP, HTML, CSS, JavaScript, React și Node.js. Crearea soluțiilor backend și a API-urilor RESTful.",
+                "location": "Barcelona, Spania"
+            }
+        ]
     }
 }
