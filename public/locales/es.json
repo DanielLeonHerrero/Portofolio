@@ -9,7 +9,7 @@
         "hello": "Hola",
         "presentation": "Soy Daniel Leon Herrero",
         "developer": "Un Desarrollador",
-        "role" : {
+        "role": {
             "app": "de Aplicaciones",
             "web": "Web",
             "API": "de APIs"
@@ -72,43 +72,210 @@
             }
         ]
     },
-"projectsSection" : {
-    "title": "Proyectos",
-    "description": "Algunos de los proyectos que he realizado en mi etapa profesional.",
-    "list": [
-        {
-            "id": 1,
-            "name": "Web de Presentación",
-            "description": "Web de presentación personal con información sobre mi perfil profesional y habilidades.",
-            "technologies": "HTML, CSS, JavaScript, React, i18next",
-            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
-            "date": "Noviembre 2023",
-            "link": ""
-        },
-        {
-            "id": 2,
-            "name": "API RESTful",
-            "description": "API RESTful para la gestión de usuarios y roles en una aplicación web.",
-            "technologies": "Node.js, Express, MongoDB, JWT",
-            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
-            "link": ""
-        },
-        {
-            "id": 3,
-            "name": "Aplicación Web",
-            "description": "Aplicación web para la gestión de tareas y proyectos con usuarios y roles.",
-            "technologies": "React, Node.js, Express, MongoDB, JWT",
-            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
-            "link": ""
-        },
-        {
-            "id": 4,
-            "name": "Aplicación Móvil",
-            "description": "Aplicación móvil para la gestión de tareas y proyectos con usuarios y roles.",
-            "technologies": "React Native, Node.js, Express, MongoDB, JWT",
-            "tags": ["HTML", "CSS", "JavaScript", "React", "i18next"],
-            "link": ""
-        }
-    ]
-}
+    "projectsSection": {
+        "title": "Proyectos",
+        "description": "Algunos de los proyectos que he realizado en mi etapa profesional.",
+        "button": "Ver todos",
+        "list": [
+            {
+                "id": 1,
+                "name": "Web de Presentación",
+                "description": "Web de presentación personal con información sobre mi perfil profesional y habilidades.",
+                "technologies": "HTML, CSS, JavaScript, React, i18next",
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "i18next"
+                ],
+                "date": "Noviembre 2023",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "name": "API RESTful",
+                "description": "API RESTful para la gestión de usuarios y roles en una aplicación web.",
+                "technologies": "Node.js, Express, MongoDB, JWT",
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "i18next"
+                ],
+                "date": "Noviembre 2023",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "name": "Aplicación Web",
+                "description": "Aplicación web para la gestión de tareas y proyectos con usuarios y roles.",
+                "technologies": "React, Node.js, Express, MongoDB, JWT",
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "i18next"
+                ],
+                "date": "Noviembre 2023",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "name": "Aplicación Móvil",
+                "description": "Aplicación móvil para la gestión de tareas y proyectos con usuarios y roles.",
+                "technologies": "React Native, Node.js, Express, MongoDB, JWT",
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "i18next"
+                ],
+                "date": "Noviembre 2023",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "name": "E-commerce Plataforma",
+                "description": "Plataforma de comercio electrónico con carrito de compras y pasarela de pago integrada.",
+                "technologies": "React, Redux, Node.js, MongoDB, Stripe API",
+                "tags": [
+                    "React",
+                    "Redux",
+                    "Node.js",
+                    "MongoDB",
+                    "Stripe API"
+                ],
+                "date": "Diciembre 2023",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "name": "Sistema de Inventarios",
+                "description": "Aplicación web para la gestión de inventarios con notificaciones automáticas de stock bajo.",
+                "technologies": "Angular, Node.js, Express, PostgreSQL",
+                "tags": [
+                    "Angular",
+                    "Node.js",
+                    "Express",
+                    "PostgreSQL"
+                ],
+                "date": "Diciembre 2023",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "name": "Blog Personal",
+                "description": "Plataforma de blog personal con autenticación de usuarios y sistema de comentarios.",
+                "technologies": "Next.js, MongoDB, Firebase, Tailwind CSS",
+                "tags": [
+                    "Next.js",
+                    "MongoDB",
+                    "Firebase",
+                    "Tailwind CSS"
+                ],
+                "date": "Enero 2024",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "name": "Plataforma de Cursos Online",
+                "description": "Sistema para la creación y venta de cursos en línea con gestión de usuarios y roles.",
+                "technologies": "Vue.js, Nuxt.js, Firebase, Stripe API",
+                "tags": [
+                    "Vue.js",
+                    "Nuxt.js",
+                    "Firebase",
+                    "Stripe API"
+                ],
+                "date": "Febrero 2024",
+                "link": ""
+            },
+            {
+                "id": 9,
+                "name": "Aplicación de Chat en Tiempo Real",
+                "description": "Aplicación de mensajería instantánea con soporte para grupos y mensajes privados.",
+                "technologies": "React, Node.js, Socket.io, MongoDB",
+                "tags": [
+                    "React",
+                    "Node.js",
+                    "Socket.io",
+                    "MongoDB"
+                ],
+                "date": "Febrero 2024",
+                "link": ""
+            },
+            {
+                "id": 10,
+                "name": "Panel de Control Administrativo",
+                "description": "Panel de control para la gestión de usuarios, roles y permisos en un sistema web.",
+                "technologies": "Angular, TypeScript, Node.js, MySQL",
+                "tags": [
+                    "Angular",
+                    "TypeScript",
+                    "Node.js",
+                    "MySQL"
+                ],
+                "date": "Marzo 2024",
+                "link": ""
+            },
+            {
+                "id": 11,
+                "name": "Dashboard de Estadísticas",
+                "description": "Dashboard interactivo para visualizar estadísticas en tiempo real con gráficos dinámicos.",
+                "technologies": "React, D3.js, Node.js, PostgreSQL",
+                "tags": [
+                    "React",
+                    "D3.js",
+                    "Node.js",
+                    "PostgreSQL"
+                ],
+                "date": "Marzo 2024",
+                "link": ""
+            },
+            {
+                "id": 12,
+                "name": "Aplicación de Notas",
+                "description": "Aplicación móvil para la creación y organización de notas personales con soporte offline.",
+                "technologies": "React Native, Firebase, SQLite",
+                "tags": [
+                    "React Native",
+                    "Firebase",
+                    "SQLite"
+                ],
+                "date": "Abril 2024",
+                "link": ""
+            },
+            {
+                "id": 13,
+                "name": "Sistema de Reservas",
+                "description": "Sistema de reservas en línea para restaurantes y eventos con gestión de usuarios y horarios.",
+                "technologies": "Vue.js, Firebase, Node.js",
+                "tags": [
+                    "Vue.js",
+                    "Firebase",
+                    "Node.js"
+                ],
+                "date": "Abril 2024",
+                "link": ""
+            },
+            {
+                "id": 14,
+                "name": "Aplicación de Finanzas Personales",
+                "description": "Aplicación para el seguimiento de ingresos y gastos con gráficos de evolución financiera.",
+                "technologies": "Flutter, Dart, Firebase, SQLite",
+                "tags": [
+                    "Flutter",
+                    "Dart",
+                    "Firebase",
+                    "SQLite"
+                ],
+                "date": "Mayo 2024",
+                "link": ""
+            }
+        ]
+    }
 }
