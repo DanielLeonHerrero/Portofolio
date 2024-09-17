@@ -17,8 +17,6 @@ const ProjectSection = () => {
     setViewMore(!viewMore)
   }
 
-  console.log(viewMore);
-
   return (
     <div ref={projectSection} className="text-black pt-20">
       <section className="flex flex-col gap-5 items-center justify-center text-black text-center pl-4 pr-4">
