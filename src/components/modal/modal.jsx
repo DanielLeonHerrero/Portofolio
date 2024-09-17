@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import useModal from '../../context/modalContext/hook/useModal'
 import Button from '../button/buton'
+import CloseIcon from '../svg/close'
+
 
 const Modal = (props) => {
 
@@ -23,11 +25,11 @@ const Modal = (props) => {
     }
 
     return (
-        <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50' onClick={handlerClickOutside}>
-            <div ref={modalRef} className='relative w-3/4 h-96 bg-white'>
+        <div className='fixed p-3 inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50 sm:p-0' onClick={handlerClickOutside}>
+            <div ref={modalRef} className='relative bg-white dark:bg-gray-900 dark:text-white'>
                 {children}
                 <div className='absolute top-0 right-0'>
-                    <Button variant='modal-close' text='x' onClick={closeModal} />
+                    <Button variant='modal-close' svg={<CloseIcon />} onClick={closeModal} />
                 </div>
             </div>
         </div>

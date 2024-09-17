@@ -75,7 +75,10 @@
     "projectsSection": {
         "title": "Proyectos",
         "description": "Algunos de los proyectos que he realizado en mi etapa profesional.",
-        "button": "Ver todos",
+        "button": {
+            "more": "Ver más",
+            "less": "Ver menos"
+        },
         "list": [
             {
                 "id": 1,

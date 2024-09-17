@@ -24,7 +24,7 @@ const ProjectSection = () => {
         <div className='flex flex-col gap-5 md:flex-row'>
           <ProjectsContainer viewMore={viewMore}/>
         </div>
-        <Button variant={"primary"} text={t("projectsSection.button")} onClick={handlerViewMore}/>
+        <Button variant={"primary"} text={viewMore ? t("projectsSection.button.less"): t("projectsSection.button.more")} onClick={handlerViewMore}/>
       </section>
     </div>
   )
