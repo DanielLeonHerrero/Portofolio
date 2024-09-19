@@ -17,25 +17,29 @@
     },
     "aboutmeSection": {
         "title": "Despre mine",
-        "description": "O scurtă descriere a mea în etapa profesională.",
+        "description": "O scurtă descriere despre mine în stadiul meu profesional.",
         "name": "Nume",
         "profile": "Profil",
-        "email": "Email",
+        "email": "E-mail",
         "phone": "Telefon",
-        "habilities": "Aptitudini",
+        "habilities": "Abilități",
         "databases": "Baze de date",
         "others": "Altele"
     },
     "workSection": {
         "title": "Lucrări",
-        "description": "Unele dintre lucrările pe care le-am realizat în cariera mea profesională.",
+        "description": "Câteva dintre lucrările pe care le-am realizat în cariera mea profesională.",
+        "button": {
+            "more": "Vezi mai mult",
+            "less": "Vezi mai puțin"
+        },
         "list": [
             {
                 "id": 1,
                 "company": "SIMRALLY",
-                "position": "Administrator de Servere",
+                "position": "Administrator Servere",
                 "date": "Mai 2020",
-                "description": "Administrarea serverelor, instalarea sistemelor de operare și gestionarea copiilor de rezervă. Suport tehnic și politici de securitate.",
+                "description": "Administrarea serverelor, instalarea sistemelor de operare și gestionarea copiilor de siguranță. Suport tehnic și politici de securitate.",
                 "location": "Barcelona, Spania"
             },
             {
@@ -51,15 +55,15 @@
                 "company": "RMTrade",
                 "position": "Specialist Suport Tehnic",
                 "date": "Noiembrie 2021",
-                "description": "Suport tehnic, întreținerea echipamentelor și rezolvarea problemelor de hardware, software și rețea.",
+                "description": "Suport tehnic, întreținerea echipamentelor și rezolvarea incidentelor hardware, software și de rețea.",
                 "location": "Barcelona, Spania"
             },
             {
                 "id": 4,
                 "company": "Egara Optiminn",
-                "position": "Specialist în Sisteme",
+                "position": "Specialist Sisteme",
                 "date": "Mai 2022",
-                "description": "Gestionarea riscurilor de securitate, audituri și administrarea instrumentelor precum Azure Sentinel.",
+                "description": "Managementul riscurilor de securitate, audituri și administrarea uneltelor precum Azure Sentinel.",
                 "location": "Barcelona, Spania"
             },
             {
@@ -67,8 +71,77 @@
                 "company": "4GL Consultors",
                 "position": "Dezvoltator Web",
                 "date": "Noiembrie 2023",
-                "description": "Dezvoltarea aplicațiilor web cu PHP, HTML, CSS, JavaScript, React și Node.js. Crearea soluțiilor backend și a API-urilor RESTful.",
+                "description": "Dezvoltarea aplicațiilor web cu PHP, HTML, CSS, JavaScript, React și Node.js. Crearea soluțiilor backend și API RESTful.",
                 "location": "Barcelona, Spania"
+            }
+        ]
+    },
+    "projectsSection": {
+        "title": "Proiecte",
+        "description": "Câteva dintre proiectele pe care le-am realizat în cariera mea profesională.",
+        "tecnologies": "Tehnologii Folosite",
+        "link": "Accesează proiectul",
+        "github": "Vezi pe GitHub",
+        "button": {
+            "more": "Vezi mai mult",
+            "less": "Vezi mai puțin"
+        },
+        "list": [
+            {
+                "id": 1,
+                "name": "Blog de Cafea",
+                "description": "Blog de cafea responsiv unde se pot citi articole și promova cursuri și ateliere. Se termină cu un formular de contact.",
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "date": "Octombrie 2021",
+                "linkProject": "https://blogcafe.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/Blog-Cafe"
+            },
+            {
+                "id": 2,
+                "name": "Festival de Muzică",
+                "description": "Site pentru un festival de muzică cu informații despre artiști, program, galerie de imagini și vânzare de bilete.",
+                "tags": [
+                    "HTML",
+                    "SCSS",
+                    "JavaScript",
+                    "Gulp"
+                ],
+                "date": "Noiembrie 2023",
+                "linkProject": "https://festivalmusical.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/FestivalMusica"
+            },
+            {
+                "id": 3,
+                "name": "Imobiliare",
+                "description": "Site imobiliar cu listare de proprietăți, formular de contact, blog și zonă de administrare pentru creare, editare, citire și ștergere de proprietăți sau înregistrări.",
+                "tags": [
+                    "PHP",
+                    "SCSS",
+                    "JavaScript",
+                    "Gulp",
+                    "SQL"
+                ],
+                "date": "Decembrie 2023",
+                "linkProject": "https://realestate.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/RealEstate"
+            },
+            {
+                "id": 4,
+                "name": "Portofoliu",
+                "description": "Site personal cu informații despre mine, lucrări și proiecte. Include și un formular de contact.",
+                "tags": [
+                    "Tailwind CSS",
+                    "JavaScript",
+                    "React",
+                    "i18next"
+                ],
+                "date": "Septembrie 2024",
+                "linkProject": "https://festivalmusical.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/FestivalMusica"
             }
         ]
     }

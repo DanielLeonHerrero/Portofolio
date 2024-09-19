@@ -28,7 +28,11 @@
     },
     "workSection": {
         "title": "Work",
-        "description": "Some of the jobs I have done in my professional career.",
+        "description": "Some of the work I've done during my professional career.",
+        "button": {
+            "more": "See more",
+            "less": "See less"
+        },
         "list": [
             {
                 "id": 1,
@@ -43,7 +47,7 @@
                 "company": "4GL Consultors",
                 "position": "Intern",
                 "date": "February 2021",
-                "description": "Web application development and programming in PHP, HTML, CSS, and JavaScript. Code debugging support.",
+                "description": "Web application development and programming in PHP, HTML, CSS, and JavaScript. Support in code debugging.",
                 "location": "Barcelona, Spain"
             },
             {
@@ -51,7 +55,7 @@
                 "company": "RMTrade",
                 "position": "Technical Support Specialist",
                 "date": "November 2021",
-                "description": "Technical support, equipment maintenance, and resolution of hardware, software, and network issues.",
+                "description": "Technical support, equipment maintenance, and hardware, software, and network incident resolution.",
                 "location": "Barcelona, Spain"
             },
             {
@@ -67,8 +71,77 @@
                 "company": "4GL Consultors",
                 "position": "Web Developer",
                 "date": "November 2023",
-                "description": "Web application development with PHP, HTML, CSS, JavaScript, React, and Node.js. Backend solutions and RESTful API creation.",
+                "description": "Web application development with PHP, HTML, CSS, JavaScript, React, and Node.js. Creation of backend solutions and RESTful APIs.",
                 "location": "Barcelona, Spain"
+            }
+        ]
+    },
+    "projectsSection": {
+        "title": "Projects",
+        "description": "Some of the projects I've completed during my professional career.",
+        "tecnologies": "Technologies Used",
+        "link": "Go to project",
+        "github": "See on GitHub",
+        "button": {
+            "more": "See more",
+            "less": "See less"
+        },
+        "list": [
+            {
+                "id": 1,
+                "name": "Coffee Blog",
+                "description": "Responsive coffee blog where users can read articles and promote courses and workshops. Concludes with a contact form.",
+                "tags": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                "date": "October 2021",
+                "linkProject": "https://blogcafe.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/Blog-Cafe"
+            },
+            {
+                "id": 2,
+                "name": "Music Festival",
+                "description": "Website for a music festival with information about artists, schedules, image gallery, and ticket sales.",
+                "tags": [
+                    "HTML",
+                    "SCSS",
+                    "JavaScript",
+                    "Gulp"
+                ],
+                "date": "November 2023",
+                "linkProject": "https://festivalmusical.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/FestivalMusica"
+            },
+            {
+                "id": 3,
+                "name": "Real Estate",
+                "description": "Real estate website with property listings, contact form, blog, and admin area to create, edit, read, and delete properties or entries.",
+                "tags": [
+                    "PHP",
+                    "SCSS",
+                    "JavaScript",
+                    "Gulp",
+                    "SQL"
+                ],
+                "date": "December 2023",
+                "linkProject": "https://realestate.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/RealEstate"
+            },
+            {
+                "id": 4,
+                "name": "Portfolio",
+                "description": "Personal website with information about me, work, and projects. Also includes a contact form.",
+                "tags": [
+                    "Tailwind CSS",
+                    "JavaScript",
+                    "React",
+                    "i18next"
+                ],
+                "date": "September 2024",
+                "linkProject": "https://festivalmusical.lioncode.es",
+                "linkGithub": "https://github.com/DanielLeonHerrero/FestivalMusica"
             }
         ]
     }

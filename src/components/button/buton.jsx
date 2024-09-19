@@ -5,8 +5,9 @@ const variants = {
     "header": "border rounded-full",
     "square": "border",
     "noBorder": "",
-    "primary": "bg-black text-white w-48 h-16 rounded-full flex justify-center hover:bg-gray-600 hover:border-solid hover:border-4 hover:border-black dark:bg-white dark:text-black dark:hover:bg-gray-300 dark:hover:border-white",
-    "modal-close" : "text-black w-8 h-8 rounded-full flex justify-center hover:bg-gray-600 hover:border-solid hover:border-4 hover:border-black dark:text-white dark:hover:bg-gray-300 dark:hover:border-white"
+    "primary": "bg-black text-white w-48 h-14 rounded-full flex justify-center hover:bg-gray-600 hover:border-solid hover:border-4 hover:border-black dark:bg-white dark:text-black dark:hover:bg-gray-300 dark:hover:border-white",
+    "modal-close" : "text-black w-8 h-8 flex justify-center dark:text-white",
+    "link": "text-black dark:text-white",
 }
 
 const Button = (props) => {

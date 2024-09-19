@@ -27,7 +27,7 @@ const WorkTimeLine = () => {
                     })
             }
             <div>
-                <Button variant="primary" text={"Mas Trabajos"} className={"mt-16"} onClick={() => { setExpanded(!expanded) }} />
+                <Button variant="primary" text={expanded ? t("workSection.button.less") : t("workSection.button.more")} className={"mt-16"} onClick={() => { setExpanded(!expanded) }} />
             </div>
         </div>
     )

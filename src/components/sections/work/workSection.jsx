@@ -20,7 +20,7 @@ const WorkSection = () => {
         <Card variant={"flat"} className={"flex flex-col gap-2 p-16 bg-white lg:flex-row dark:bg-gray-900 dark:text-white"}>
           <div className='flex flex-col gap-2'>
             <div className='w-full flex flex-col gap-2 sm:flex-row items-center justify-center md:justify-start'>
-              <div className='w-2/4 md:w-1/4 bg-rd-500 h-auto rounded lg:w-1/4'>
+              <div className='w-3/4 md:w-1/4 bg-rd-500 h-auto rounded lg:w-1/4'>
                 <img src="/images/photo.jpg" alt="image" className='rounded-md' />
               </div>
               <div className='flex flex-col gap-3 text-start'>
