@@ -28,7 +28,7 @@ const LanguageSelector = (props) => {
     onClick={() => setShowMenuLanguage(!showMenuLanguage)}
   />
 
-  {showMenuLanguage && <LanguageMenu className={`mt-3 bg-${headerBg} text-${textColor} transition-color duration-500 lg:absolute lg:top-[4.2rem] lg:mt-0 lg:rounded`} />}
+  {showMenuLanguage && <LanguageMenu className={`mt-3 bg-${headerBg} text-${textColor} transition-color duration-500 lg:absolute lg:top-[4.2rem] lg:mt-1 lg:rounded`} />}
 </div>
     )
 }

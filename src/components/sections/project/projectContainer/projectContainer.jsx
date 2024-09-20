@@ -1,14 +1,11 @@
-import { useTranslation } from "react-i18next"
 import Card from "../../../card/card"
 import PropTypes from 'prop-types'
 import useModal from "../../../../context/modalContext/hook/useModal"
 import ProjectModal from "../projectModal/projectModal"
 
 const ProjectsContainer = (props) => {
-    const { viewMore } = props
-    const { t } = useTranslation()
-    const { openModal, closeModal, isOpen } = useModal()
-    const myProjects = t("projectsSection.list", { returnObjects: true })
+    const { viewMore, myProjects } = props
+    const { openModal } = useModal()
 
     return (
         <div className="flex flex-wrap justify-center">
@@ -43,7 +40,8 @@ const ProjectsContainer = (props) => {
 }
 
 ProjectsContainer.propTypes = {
-    viewMore: PropTypes.bool
+    viewMore: PropTypes.bool,
+    myProjects: PropTypes.array
 }
 
 export default ProjectsContainer

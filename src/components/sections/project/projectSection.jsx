@@ -12,6 +12,7 @@ const ProjectSection = () => {
   const { projectSection } = useSection()
   const { t } = useTranslation()
   const [ viewMore, setViewMore ] = React.useState(false)
+  const myProjects = t("projectsSection.list", { returnObjects: true })
 
   const handlerViewMore = () => {
     setViewMore(!viewMore)
@@ -22,9 +23,9 @@ const ProjectSection = () => {
       <section className="flex flex-col gap-5 items-center justify-center text-black text-center pl-4 pr-4">
         <SectionTitle svg={() => <ClipboardIcon />} title={t("projectsSection.title")} subtitle={t("projectsSection.description")} />
         <div className='flex flex-col gap-5 md:flex-row'>
-          <ProjectsContainer viewMore={viewMore}/>
+          <ProjectsContainer viewMore={viewMore} myProjects={myProjects}/>
         </div>
-        <Button variant={"primary"} text={viewMore ? t("projectsSection.button.less"): t("projectsSection.button.more")} onClick={handlerViewMore}/>
+        {myProjects.length > 6 && <Button variant={"primary"} text={viewMore ? t("projectsSection.button.less"): t("projectsSection.button.more")} onClick={handlerViewMore}/>}
       </section>
     </div>
   )
