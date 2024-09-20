@@ -12,10 +12,10 @@ const variants = {
 
 const Button = (props) => {
 
-    const { variant, svg, text, className, onClick} = props
+    const { variant, svg, text, className, onClick, type} = props
 
     return (
-        <button className={`flex gap-1 items-center ${variants[variant]} ${className}`} onClick={onClick}>
+        <button type={type} className={`flex gap-1 items-center ${variants[variant]} ${className}`} onClick={onClick}>
             {svg}
             <span>
                 {text}
@@ -29,7 +29,8 @@ Button.propTypes = {
     svg: PropTypes.element,
     text: PropTypes.string,
     className: PropTypes.string,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    type: PropTypes.string
 }
 
 export default Button;

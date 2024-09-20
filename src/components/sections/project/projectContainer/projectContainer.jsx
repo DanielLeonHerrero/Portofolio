@@ -8,7 +8,7 @@ const ProjectsContainer = (props) => {
     const { openModal } = useModal()
 
     return (
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-start">
             {
                 myProjects && myProjects
                     .map((project, index) => {

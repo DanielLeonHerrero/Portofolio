@@ -16,8 +16,8 @@ function App() {
       <ContainerFullHD>
         <WorkSection />
         <ProjectSection />
-        <ContactSection />
       </ContainerFullHD>
+      <ContactSection />
     </>
   );
 }

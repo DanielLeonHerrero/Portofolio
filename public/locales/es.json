@@ -144,5 +144,22 @@
                 "linkGithub": "https://github.com/DanielLeonHerrero/FestivalMusica"
             }
         ]
+    },
+    "contactSection": {
+        "mail": {
+            "title": "Envíame un mensaje",
+            "form": {
+                "name": "Tu Nombre",
+                "email": "Tu Correo",
+                "subject": "Asunto",
+                "message": "Mensaje",
+                "button": "Enviar",
+                "bodyPart": "Hola, me llamo"
+            }
+        },
+        "contact": {
+            "title": "Contacto",
+            "description": "Si tienes alguna duda o quieres contactar conmigo, puedes hacerlo a través de los siguientes medios."
+        }
     }
 }
