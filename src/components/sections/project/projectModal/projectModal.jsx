@@ -15,7 +15,7 @@ const ProjectModal = (props) => {
     return (
         <div className="flex flex-col w-screen md:max-w-2xl max-h-svh items-start text-start">
             <div>
-                <img src={`/images/projects/${project.id}.png`} alt="project" />
+                <img src={`/images/projects/${project.id}.webp`} alt="project" />
             </div>
             <div className="bg-white w-full max-h-xl overflow-y-scroll dark:bg-gray-900 pt-10 pl-5 pr-5 pb-5">
                 <h1 className='text-xl sm:text-2xl lg:text-3xl font-bold'>{project.name}</h1>

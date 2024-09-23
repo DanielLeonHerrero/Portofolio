@@ -6,7 +6,7 @@
         "contact": "Contact"
     },
     "welcomeSection": {
-        "hello": "Salut",
+        "hello": "Bună",
         "presentation": "Sunt Daniel Leon Herrero",
         "developer": "Un Dezvoltator",
         "role": {
@@ -17,10 +17,10 @@
     },
     "aboutmeSection": {
         "title": "Despre mine",
-        "description": "O scurtă descriere despre mine în stadiul meu profesional.",
+        "description": "O scurtă descriere despre mine în cariera mea profesională.",
         "name": "Nume",
         "profile": "Profil",
-        "email": "E-mail",
+        "email": "Email",
         "phone": "Telefon",
         "habilities": "Abilități",
         "databases": "Baze de date",
@@ -39,15 +39,15 @@
                 "company": "SIMRALLY",
                 "position": "Administrator Servere",
                 "date": "Mai 2020",
-                "description": "Administrarea serverelor, instalarea sistemelor de operare și gestionarea copiilor de siguranță. Suport tehnic și politici de securitate.",
+                "description": "Administrare servere, instalare sisteme de operare și gestionare copii de rezervă. Suport tehnic și politici de securitate.",
                 "location": "Barcelona, Spania"
             },
             {
                 "id": 2,
                 "company": "4GL Consultors",
-                "position": "Intern",
+                "position": "Stagiar",
                 "date": "Februarie 2021",
-                "description": "Dezvoltarea aplicațiilor web și programare în PHP, HTML, CSS și JavaScript. Suport în depanarea codului.",
+                "description": "Dezvoltare aplicații web și programare în PHP, HTML, CSS și JavaScript. Suport pentru depanarea codului.",
                 "location": "Barcelona, Spania"
             },
             {
@@ -55,7 +55,7 @@
                 "company": "RMTrade",
                 "position": "Specialist Suport Tehnic",
                 "date": "Noiembrie 2021",
-                "description": "Suport tehnic, întreținerea echipamentelor și rezolvarea incidentelor hardware, software și de rețea.",
+                "description": "Suport tehnic, întreținere echipamente și rezolvarea problemelor hardware, software și de rețea.",
                 "location": "Barcelona, Spania"
             },
             {
@@ -63,7 +63,7 @@
                 "company": "Egara Optiminn",
                 "position": "Specialist Sisteme",
                 "date": "Mai 2022",
-                "description": "Managementul riscurilor de securitate, audituri și administrarea uneltelor precum Azure Sentinel.",
+                "description": "Gestionarea riscurilor de securitate, audituri și administrarea unor instrumente precum Azure Sentinel.",
                 "location": "Barcelona, Spania"
             },
             {
@@ -71,14 +71,14 @@
                 "company": "4GL Consultors",
                 "position": "Dezvoltator Web",
                 "date": "Noiembrie 2023",
-                "description": "Dezvoltarea aplicațiilor web cu PHP, HTML, CSS, JavaScript, React și Node.js. Crearea soluțiilor backend și API RESTful.",
+                "description": "Dezvoltare aplicații web cu PHP, HTML, CSS, JavaScript, React și Node.js. Crearea soluțiilor backend și API RESTful.",
                 "location": "Barcelona, Spania"
             }
         ]
     },
     "projectsSection": {
         "title": "Proiecte",
-        "description": "Câteva dintre proiectele pe care le-am realizat în cariera mea profesională.",
+        "description": "Câteva dintre proiectele la care am lucrat în cariera mea profesională.",
         "tecnologies": "Tehnologii Folosite",
         "link": "Accesează proiectul",
         "github": "Vezi pe GitHub",
@@ -89,8 +89,8 @@
         "list": [
             {
                 "id": 1,
-                "name": "Blog de Cafea",
-                "description": "Blog de cafea responsiv unde se pot citi articole și promova cursuri și ateliere. Se termină cu un formular de contact.",
+                "name": "Blog de cafea",
+                "description": "Design responsive al unui blog despre cafea unde poți citi articole și promova cursuri și ateliere, terminând cu un formular de contact.",
                 "tags": [
                     "HTML",
                     "CSS",
@@ -103,7 +103,7 @@
             {
                 "id": 2,
                 "name": "Festival de Muzică",
-                "description": "Site pentru un festival de muzică cu informații despre artiști, program, galerie de imagini și vânzare de bilete.",
+                "description": "Pagină web pentru un festival de muzică cu informații despre artiști, program, galerie de imagini și vânzare de bilete.",
                 "tags": [
                     "HTML",
                     "SCSS",
@@ -117,7 +117,7 @@
             {
                 "id": 3,
                 "name": "Imobiliare",
-                "description": "Site imobiliar cu listare de proprietăți, formular de contact, blog și zonă de administrare pentru creare, editare, citire și ștergere de proprietăți sau înregistrări.",
+                "description": "Pagină web pentru o agenție imobiliară cu listare de proprietăți, formular de contact, blog și zonă de administrare unde poți crea, edita, citi și șterge proprietăți sau articole.",
                 "tags": [
                     "PHP",
                     "SCSS",
@@ -132,7 +132,7 @@
             {
                 "id": 4,
                 "name": "Portofoliu",
-                "description": "Site personal cu informații despre mine, lucrări și proiecte. Include și un formular de contact.",
+                "description": "Pagina mea personală cu informații despre mine, lucrările realizate și proiecte. Include un formular de contact.",
                 "tags": [
                     "Tailwind CSS",
                     "JavaScript",
@@ -144,5 +144,22 @@
                 "linkGithub": "https://github.com/DanielLeonHerrero/FestivalMusica"
             }
         ]
+    },
+    "contactSection": {
+        "mail": {
+            "title": "Trimite-mi un mesaj",
+            "form": {
+                "name": "Numele tău",
+                "email": "Email-ul tău",
+                "subject": "Subiect",
+                "message": "Mesaj",
+                "button": "Trimite",
+                "bodyPart": "Bună, mă numesc"
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "Dacă ai întrebări sau dorești să mă contactezi, o poți face prin intermediul următoarelor metode."
+        }
     }
 }

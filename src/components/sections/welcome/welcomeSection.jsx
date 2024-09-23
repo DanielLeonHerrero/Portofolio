@@ -9,7 +9,7 @@ const WelcomeSection = () => {
   const role = [t("welcomeSection.role.app"), t("welcomeSection.role.web"), t("welcomeSection.role.API")];
 
   return (
-    <div ref={welcomeSection} className="relative h-screen bg-center bg-cover desktop:bg-fixed text-white" style={{ backgroundImage: "url('/images/background.jpg')" }}>
+    <div ref={welcomeSection} className="relative h-screen bg-center bg-cover desktop:bg-fixed text-white" style={{ backgroundImage: "url('/images/background.webp')" }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 flex items-center justify-center">
         <section className="flex flex-col gap-5 items-center justify-center text-white m-10 text-center">

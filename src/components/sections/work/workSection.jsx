@@ -21,7 +21,7 @@ const WorkSection = () => {
           <div className='flex flex-col gap-2'>
             <div className='w-full flex flex-col gap-2 sm:flex-row items-center justify-center md:justify-start'>
               <div className='w-3/4 md:w-1/4 bg-rd-500 h-auto rounded lg:w-1/4'>
-                <img src="/images/photo.jpg" alt="image" className='rounded-md' />
+                <img src="/images/photo.webp" alt="image" className='rounded-md' />
               </div>
               <div className='flex flex-col gap-3 text-start'>
                 <p><span className='font-bold'>{t("aboutmeSection.name")}:  </span> Daniel Leon Herrero</p>

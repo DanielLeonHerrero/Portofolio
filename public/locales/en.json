@@ -7,7 +7,7 @@
     },
     "welcomeSection": {
         "hello": "Hello",
-        "presentation": "I am Daniel Leon Herrero",
+        "presentation": "I'm Daniel Leon Herrero",
         "developer": "A Developer",
         "role": {
             "app": "of Applications",
@@ -16,7 +16,7 @@
         }
     },
     "aboutmeSection": {
-        "title": "About Me",
+        "title": "About me",
         "description": "A brief description of myself in my professional stage.",
         "name": "Name",
         "profile": "Profile",
@@ -28,7 +28,7 @@
     },
     "workSection": {
         "title": "Work",
-        "description": "Some of the work I've done during my professional career.",
+        "description": "Some of the work I have done during my professional career.",
         "button": {
             "more": "See more",
             "less": "See less"
@@ -47,7 +47,7 @@
                 "company": "4GL Consultors",
                 "position": "Intern",
                 "date": "February 2021",
-                "description": "Web application development and programming in PHP, HTML, CSS, and JavaScript. Support in code debugging.",
+                "description": "Web application development and programming in PHP, HTML, CSS, and JavaScript. Code debugging support.",
                 "location": "Barcelona, Spain"
             },
             {
@@ -55,7 +55,7 @@
                 "company": "RMTrade",
                 "position": "Technical Support Specialist",
                 "date": "November 2021",
-                "description": "Technical support, equipment maintenance, and hardware, software, and network incident resolution.",
+                "description": "Technical support, equipment maintenance, and troubleshooting of hardware, software, and network issues.",
                 "location": "Barcelona, Spain"
             },
             {
@@ -71,17 +71,17 @@
                 "company": "4GL Consultors",
                 "position": "Web Developer",
                 "date": "November 2023",
-                "description": "Web application development with PHP, HTML, CSS, JavaScript, React, and Node.js. Creation of backend solutions and RESTful APIs.",
+                "description": "Development of web applications with PHP, HTML, CSS, JavaScript, React, and Node.js. Backend solutions and RESTful API creation.",
                 "location": "Barcelona, Spain"
             }
         ]
     },
     "projectsSection": {
         "title": "Projects",
-        "description": "Some of the projects I've completed during my professional career.",
+        "description": "Some of the projects I have worked on during my professional career.",
         "tecnologies": "Technologies Used",
         "link": "Go to project",
-        "github": "See on GitHub",
+        "github": "View on GitHub",
         "button": {
             "more": "See more",
             "less": "See less"
@@ -90,7 +90,7 @@
             {
                 "id": 1,
                 "name": "Coffee Blog",
-                "description": "Responsive coffee blog where users can read articles and promote courses and workshops. Concludes with a contact form.",
+                "description": "Responsive coffee blog design where you can read articles and promote courses and workshops, ending with a contact form.",
                 "tags": [
                     "HTML",
                     "CSS",
@@ -103,7 +103,7 @@
             {
                 "id": 2,
                 "name": "Music Festival",
-                "description": "Website for a music festival with information about artists, schedules, image gallery, and ticket sales.",
+                "description": "Website for a music festival with information about the artists, schedules, image gallery, and ticket sales.",
                 "tags": [
                     "HTML",
                     "SCSS",
@@ -117,7 +117,7 @@
             {
                 "id": 3,
                 "name": "Real Estate",
-                "description": "Real estate website with property listings, contact form, blog, and admin area to create, edit, read, and delete properties or entries.",
+                "description": "Real estate website with property listings, contact form, blog, and admin area where you can create, edit, read, and delete properties or entries.",
                 "tags": [
                     "PHP",
                     "SCSS",
@@ -132,7 +132,7 @@
             {
                 "id": 4,
                 "name": "Portfolio",
-                "description": "Personal website with information about me, work, and projects. Also includes a contact form.",
+                "description": "Personal website with information about myself, work I have done, and projects. Includes a contact form.",
                 "tags": [
                     "Tailwind CSS",
                     "JavaScript",
@@ -144,5 +144,22 @@
                 "linkGithub": "https://github.com/DanielLeonHerrero/FestivalMusica"
             }
         ]
+    },
+    "contactSection": {
+        "mail": {
+            "title": "Send me a message",
+            "form": {
+                "name": "Your Name",
+                "email": "Your Email",
+                "subject": "Subject",
+                "message": "Message",
+                "button": "Send",
+                "bodyPart": "Hello, my name is"
+            }
+        },
+        "contact": {
+            "title": "Contact",
+            "description": "If you have any questions or want to contact me, you can do so through the following means."
+        }
     }
 }

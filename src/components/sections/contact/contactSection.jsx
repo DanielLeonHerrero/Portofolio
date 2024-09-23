@@ -20,7 +20,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div ref={contactSection} className="relative w-screen h-screen bg-contain bg-cover desktop:bg-fixed text-black dark:text-white" style={{ backgroundImage: "url(/images/contact_background.jpg)" }}>
+    <div ref={contactSection} className="relative w-screen h-screen bg-contain bg-cover desktop:bg-fixed text-black dark:text-white" style={{ backgroundImage: "url(/images/contact_background.webp)" }}>
       <div className='absolute inset-0 bg-black opacity-50' />
       <div className='absolute inset-0 flex items-center justify-center p-5 md:p-24'>
         <section className="bg-white w-screen lg:max-w-3xl dark:bg-gray-900 flex flex-col gap-12 md:flex-row items-center p-5 text-center">

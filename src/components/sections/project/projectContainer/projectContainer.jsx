@@ -17,7 +17,7 @@ const ProjectsContainer = (props) => {
                                 onClick={() => openModal(<ProjectModal project={project}/>)}>
                                 <Card id={project.id} variant={"project"} className={`flex flex-col dark:text-white `}>
                                     <div className="w-full">
-                                        <img src={`/images/projects/${project.id}.png`} alt="project" />
+                                        <img src={`/images/projects/${project.id}.webp`} alt="project" />
                                     </div>
                                     <div className="flex flex-col gap-2 w-full pt-10 pl-5 pr-5 pb-5 bg-white text-start dark:bg-gray-900">
                                         <h3 className="font-bold">{project.name}</h3>

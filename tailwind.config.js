@@ -31,5 +31,21 @@ export default {
       },
     }
   },
-  plugins: [],
+  plugins: [
+    function({ addBase }) {
+      addBase({
+        'html': { 
+          'scrollbarWidth': 'none', /* Firefox */
+          'scrollbarColor': 'transparent transparent', /* Firefox */
+        },
+        'body': { 
+          '-webkit-overflow-scrolling': 'touch',
+        },
+        '::-webkit-scrollbar': {
+          width: '0px',
+          background: 'transparent', /* Chrome/Safari/Webkit */
+        },
+      })
+    }
+  ],
 }
