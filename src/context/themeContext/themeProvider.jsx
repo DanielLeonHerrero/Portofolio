@@ -3,10 +3,9 @@ import ThemeContext from "./themeContext";
 import { useEffect } from "react";
 
 const ThemeProvider = ({ children }) => {
-    // const [theme, setTheme] = useState(
-    //     window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    //   );
-        const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState(
+        window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      );
 
     useEffect(() => {
         if (theme === 'light') {

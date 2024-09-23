@@ -9,6 +9,14 @@ const LanguageMenu = (props) => {
     const { className } = props
     const { language, setLanguage } = useLanguage()
 
+    console.log(language);
+
+    Object.entries(LanguageList)
+                .filter(([key]) => key !== language.key)
+                .map(([key, language]) => (
+                    console.log(key, language)
+                ))
+
     return (
         <div className={className}>
             <ul className='flex flex-col gap-4 pr-10 pl-10 pb-5'>
