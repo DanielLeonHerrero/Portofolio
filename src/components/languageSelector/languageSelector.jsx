@@ -19,7 +19,7 @@ const LanguageSelector = (props) => {
     const [showMenuLanguage, setShowMenuLanguage] = useState(false)
 
     return (
-<div className="flex flex-col items-center">
+<li className="flex flex-col items-center">
   <Button
     variant="noBorder"
     text={language.name}
@@ -29,7 +29,7 @@ const LanguageSelector = (props) => {
   />
 
   {showMenuLanguage && <LanguageMenu className={`mt-3 bg-${headerBg} text-${textColor} transition-color duration-500 lg:absolute lg:top-[4.2rem] lg:mt-1 lg:rounded`} />}
-</div>
+</li>
     )
 }
 

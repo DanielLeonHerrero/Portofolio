@@ -60,14 +60,15 @@ const Nav = (props) => {
                     className={"h-8 w-full flex justify-center"}
                 />
 
-                <LanguageSelector headerBg={headerBg} textColor={textColor}/>
-               
-                <Button
-                    variant="noBorder"
-                    svg={theme === "light" ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
-                    className={"h-8 w-full flex justify-center"}
-                    onClick={() => handlerChangeTheme()}
-                />
+                <LanguageSelector headerBg={headerBg} textColor={textColor} />
+                <li>
+                    <Button
+                        variant="noBorder"
+                        svg={theme === "light" ? <MoonIcon className="w-6 h-6" /> : <SunIcon className="w-6 h-6" />}
+                        className={"h-8 w-full flex justify-center"}
+                        onClick={() => handlerChangeTheme()}
+                    />
+                </li>
             </ul>
         </nav>
     );

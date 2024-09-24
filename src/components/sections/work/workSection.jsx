@@ -35,7 +35,7 @@ const WorkSection = () => {
             </div>
           </div>
           <div className='w-full flex flex-col gap-3 lg:items-start'>
-            <h3 className='font-bold'>{t("aboutmeSection.habilities")}:</h3>
+            <h1 className='font-bold'>{t("aboutmeSection.habilities")}:</h1>
             <div className='flex flex-col gap-5 items-start text-start'>
               <p><span className='font-bold'>Back-End: </span>PHP, Node.js, .NET, C#, Python, Java</p>
               <p><span className='font-bold'>Front-End: </span>React, JavaScript, TypeScript, HTML5, CSS3, Tailwind, Bootstrap</p>

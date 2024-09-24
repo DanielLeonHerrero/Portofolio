@@ -8,7 +8,7 @@ const Menu = (props) => {
 
     return (
         <>
-        <button className="h-auto w-10" onClick={onClick}>
+        <button className="h-auto w-10" title='menu' onClick={onClick}>
             <MenuIcon className="w-8 h-8"/>
         </button>
         </>

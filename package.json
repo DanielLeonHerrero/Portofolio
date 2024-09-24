@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --outDir webapp",
+    "build": "NODE_ENV=production vite build --outDir webapp",
     "lint": "eslint .",
     "preview": "vite preview"
   },

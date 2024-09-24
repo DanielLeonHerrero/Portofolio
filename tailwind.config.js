@@ -2,8 +2,8 @@
 export default {
   darkMode: 'class',
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     screens: {
@@ -28,6 +28,7 @@ export default {
       },
       animation: {
         blink: 'blink 1s linear infinite',
+        spinslow: 'spin 1s linear infinite',
       },
     }
   },
@@ -35,17 +36,17 @@ export default {
     function({ addBase }) {
       addBase({
         'html': { 
-          'scrollbarWidth': 'none', /* Firefox */
-          'scrollbarColor': 'transparent transparent', /* Firefox */
+          'scrollbarWidth': 'none',
+          'scrollbarColor': 'transparent transparent', 
         },
         'body': { 
           '-webkit-overflow-scrolling': 'touch',
         },
         '::-webkit-scrollbar': {
           width: '0px',
-          background: 'transparent', /* Chrome/Safari/Webkit */
+          background: 'transparent',
         },
-      })
+      });
     }
   ],
 }

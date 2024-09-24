@@ -14,7 +14,7 @@ const WelcomeSection = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <section className="flex flex-col gap-5 items-center justify-center text-white m-10 text-center">
           <p className="text-lg sm:text-3xl">{t("welcomeSection.hello")} 👋🏻</p>
-          <p className="font-bold text-3xl sm:text-6xl lg:text-7xl">{t("welcomeSection.presentation")}</p>
+          <p className="font-bold text-3xl sm:text-6xl lg:text-7xl">{t("welcomeSection.presentation")}</p> 
           <p className="text-xl md:text-4xl">
             <span>{t("welcomeSection.developer")} </span>
             {<TypingEffect textList={role} />}
