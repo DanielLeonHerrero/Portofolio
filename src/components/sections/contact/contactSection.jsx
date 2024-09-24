@@ -62,6 +62,7 @@ const ContactSection = () => {
           </div>
         </section>
       </div>
+        <p className='absolute bottom-10 text-center w-screen text-white'>Copyright (c) {new Date().getFullYear()} Daniel León Herrero</p>
     </div>
   )
 }
